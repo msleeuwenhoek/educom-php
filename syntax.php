@@ -8,22 +8,24 @@
     <h1>My first PHP page</h1>
 
     <?php 
-    
-    
-    echo "Hello world!";
-    
-    //this is a comment
-
-    # this is a comment
-
-    /* this is a
-    longer comment
-    */
-
-    $message = 5 +  /* 5 + */ 5;
-    echo $message
+    $txt = "text";
+    echo "This is a $txt";
     ?>
+    <br/>
 
+    <?php
+    echo "This is a " . $txt;
+    
+    ?>
+    <br/>
+    <?php
+    $x = 5;
+    $y = 7;
+
+    echo $x + $y;
+  
+    
+?>
    
 </body>
 </html>
