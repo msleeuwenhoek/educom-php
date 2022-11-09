@@ -13,6 +13,7 @@ $username = "root";
 $password = "";
 $dbname = "myDB";
 
+
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
@@ -20,7 +21,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, firstname, lastname FROM MyGuests";
+$sql = "SELECT id, firstname, lastname FROM MyGuests WHERE lastname='Doe'";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
